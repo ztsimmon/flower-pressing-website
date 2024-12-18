@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Vonn's Flowers</title>
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial, sans-serif';
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: url('images/hero-background.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 100px 0;
+      color: pink;
+    }
+    .about, .gallery, .contact {
+      display: none; /* Hide sections initially */
+      padding: 50px 0;
+    }
+    .footer {
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Flower Pressing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showSection('gallery')">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showSection('contact')">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero text-center">
+    <div class="container">
+      <h1>Welcome to Sweet Vonn's Flowers</h1>
+      <p>Preserving Memories One Petal at a Time</p>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Xavonne has been passionate about preserving the beauty of flowers through the art of pressing for over a decade. Her work transforms fresh flowers into beautiful, lasting keepsakes. Whether for weddings, funerals, or other special occasions, each piece is crafted with love and meticulous attention to detail, ensuring that your memories are preserved beautifully. She combines traditional techniques with creative designs to offer unique and personalized artwork that clients cherish.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="IMG_3555.jpeg" alt="Pressed Flower Art 1" class="img-fluid">
+          <p>Wedding Bouquet Preservation</p>
+        </div>
+        <div class="col-md-4">
+          <img src="IMG_3554.jpeg" alt="Pressed Flower Art 2" class="img-fluid">
+          <p>Memorial Flower Art</p>
+        </div>
+        <div class="col-md-4">
+          <img src="IMG_3553.jpeg" alt="Pressed Flower Art 3" class="img-fluid">
+          <p>Custom Floral Designs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer bg-light text-center">
+    <div class="container">
+      <p>&copy; 2024 Sweet Vonn's Flowers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('about').style.display = 'none';
+      document.getElementById('gallery').style.display = 'none';
+      document.getElementById('contact').style.display = 'none';
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Show home section by default
+    showSection('home');
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
