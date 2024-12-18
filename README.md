@@ -3,11 +3,10 @@
 Welcome to the Flower Pressing website by Xavonne. This website showcases the beautiful art of pressed flowers for special occasions such as weddings, funerals, and more. Each piece is crafted with love and meticulous attention to detail.
 
 ## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Home](#home)
+- [About](#about)
+- [Gallery](#gallery)
 - [Contact](#contact)
-- [License](#license)
 
 ## Features
 - Home page with an overview of the business
