@@ -1,6 +1,6 @@
-# Flower Pressing by [Your Wife's Name]
+# Sweet Vonn's Flowers
 
-Welcome to the Flower Pressing website by [Your Wife's Name]. This website showcases the beautiful art of pressed flowers for special occasions such as weddings, funerals, and more. Each piece is crafted with love and meticulous attention to detail.
+Welcome to the Flower Pressing website by Xavonne. This website showcases the beautiful art of pressed flowers for special occasions such as weddings, funerals, and more. Each piece is crafted with love and meticulous attention to detail.
 
 ## Table of Contents
 - [Features](#features)
@@ -20,4 +20,4 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/<your-repository-name>.git
+   git clone https://github.com/<ztsimmon>/<flower-pressing-website>.git
